@@ -1,0 +1,29 @@
+/* background image */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg  {
+    background-image: url(../images/bg1.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* center text */
+.row    {
+    text-align: center;
+}
+
+/* create space at top and bottom */
+.top-space, .bottom-space  {
+    padding: 30px;
+}
+
+/* Change coloring of the boxes and text */
+.jumbotron  {
+    background-color: rgba(6, 41, 66, 0.9);
+    color: white;
+}
