@@ -8,68 +8,85 @@
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB'
         crossorigin='anonymous'>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="text/javascript" href="assets/javascript/game.js">
     <title>Bird Song Game!</title>
 </head>
 
 <body>
 
-<div class="bg">
+    <div class="bg">
 
-    <!-- Allow space at the top for aesthetics -->
-    <div class="row top-space">
-        <div class="col-md-12"></div>
-    </div>
+        <!-- Allow space at the top for aesthetics -->
+        <div class="row top-space">
+            <div class="col-md-12"></div>
+        </div>
 
-    <!-- Create top box that will display the word,  -->
-    <div class="row">
-        <div class="col-md-2"></div>
+        <!-- Create top box that will display the word,  -->
+        <div class="row">
+            <div class="col-md-2"></div>
 
-        <div class="jumbotron jumbotron-fluid col-md-8 top-box">
-            <div class="container" id="main-text">
-                <h1 class="display-2">Welcome to the
-                    <br> Bird Song Game!</h1>
-                <p class="lead">
-                    Press any key to play!
-                </p>
+            <div class="jumbotron jumbotron-fluid col-md-8 top-box">
+
+                <!-- Welcome page HTML -->
+                <div class="container" id="welcome-text">
+                    <h1 class="display-2">Welcome to the
+                        <br> Bird Song Game!</h1>
+                    <p>
+                        Press any key to play!
+                    </p>
+                </div>
+
+                <!-- Instructions page HTML -->
+                <div class="container" id="instructions-text">
+                    <h1 class="display-3">Instructions</h1>
+                    <p id="instr-txt">Listen to the bird song and guess the species name by choosing letters one at a time. You only
+                        get 5 incorrect letters, so choose carefully! If you get stuck, press the SPACEBAR for a hint! When
+                        you're ready, press any key to begin!! Good Luck!!! </p>
+                </div>
+
+                <!-- Game page HTML -->
+                <!-- Text will be inserted via javascript -->
+                <div class="container">
+                    <h1 class="display-4" id="game-text"></h1>
+                </div>
+
             </div>
+
+        </div>
+
+
+        <div class="row" id="btm-row">
+            <div class="col-md-2"></div>
+
+            <!-- Create bottom left box which contains "press key for hint", the hint itself, and a picture of the bird once the round is over. -->
+            <div class="jumbotron jumbotron-fluid col-md-4 btm-left-box">
+                <div class="container" id="btm-left-text">
+                    <p>
+                        Press the SPACE BAR for a hint!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Create bottom right box which contains the number of right and wrong guesses, number of guesses remaining, and letters already guessed. -->
+            <div class="jumbotron jumbotron-fluid col-md-4 btm-right-box">
+                <div class="container" id="btm-right-text">
+                    <p>
+                        You have 10 guesses remaining!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Allow space at the bottom for aesthetics -->
+        <div class="row bottom-space">
+            <div class="col-md-12"></div>
         </div>
 
     </div>
+    <!-- Closing background img div -->
 
-    <!-- Create bottom left box which contains "press key for hint", the hint itself, and a picture of the bird once the round is over. -->
-    <!-- *div will be hidden on opening screen* -->
-    <div class="row">
-        <div class="col-md-2"></div>
-
-        <div class="jumbotron jumbotron-fluid col-md-4 btm-left-box">
-            <div class="container" id="btm-left-text">
-                <p class="lead">
-                    Press SPACE for a hint!
-                </p>
-            </div>
-        </div>
-
-        <!-- Create bottom right box which contains the number of right and wrong guesses, number of guesses remaining, and letters already guessed. -->
-        <!-- *div will be hidden on opening screen* -->
-
-        <div class="jumbotron jumbotron-fluid col-md-4 btm-right-box">
-            <div class="container" id="btm-right-text">
-                <p class="lead">
-                    You have 10 guesses remaining!
-                </p>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Allow space at the bottom for aesthetics -->
-    <div class="row bottom-space">
-        <div class="col-md-12"></div>
-    </div>
-
-</div> <!-- Closing background img div -->
-
+    <!-- Link to javascript file -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 
 </html>

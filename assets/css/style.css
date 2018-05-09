@@ -27,3 +27,22 @@ body, html {
     background-color: rgba(6, 41, 66, 0.9);
     color: white;
 }
+
+/* Create spacing between the underscores */
+#game-text {
+    letter-spacing: 20px;
+}
+
+/* Make the instructions more readable */
+p  {
+    letter-spacing: 2px;
+    line-height: 2;
+    font-size: 24px;
+    font-family: 'Arial';
+}
+
+/* Make headings different font */
+h1  {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
