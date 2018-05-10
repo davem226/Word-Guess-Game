@@ -17,8 +17,14 @@ body, html {
     text-align: center;
 }
 
-/* create space at top and bottom */
-.top-space, .bottom-space  {
+/* Align instructions text left for aesthetics */
+ul  {
+    text-align: left;
+}
+
+/* create space at top */
+/* and bottom .bottom-space */
+.top-space  {
     padding: 30px;
 }
 
@@ -28,21 +34,40 @@ body, html {
     color: white;
 }
 
-/* Create spacing between the underscores */
+/* Create spacing between the underscores and add aesthetics */
 #game-text {
     letter-spacing: 20px;
+    padding-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-stretch: ultra-expanded;
 }
 
 /* Make the instructions more readable */
 p  {
     letter-spacing: 2px;
-    line-height: 2;
+    line-height: 1.5;
     font-size: 24px;
     font-family: 'Arial';
+    padding-top: 10px;
 }
 
-/* Make headings different font */
+/* Make headings different font and add aesthetics */
 h1  {
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+
+/* Add space between bottom two boxes */
+.btm-left-box   {
+    margin-right: 15px;
+}
+
+/* Extend bottom boxes farther down; not ideal way to do this but okay for now */
+#btm-row    {
+    height: 50%;
+}
+
+#score, #letter-guessed, #guesses-left {
+    line-height: 2;
 }
